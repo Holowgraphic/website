@@ -1,0 +1,70 @@
+.img {
+    width: 100%;
+}
+
+.presentation {
+    padding: 2rem 3rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: var(--dark);
+    line-height: 2em;
+
+}
+
+.type {
+    color: var(--color1);
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1em;
+}
+
+h2 {
+    color: rgb(127, 127, 127);
+    font-weight: 600;
+    font-size: 1em;
+    font-style: italic;
+    padding-bottom: 1em;
+    line-height: 1.2em;
+}
+
+p {
+    line-height: 1.2em;
+    padding-bottom: 1rem;
+}
+
+.missions {
+    font-weight: 700;
+    color: var(--color5);
+}
+
+.cadre {
+    font-style: italic;
+}
+
+.siteClient {
+    font-weight: 700;
+
+}
+
+.presentation a {
+    text-decoration: underline;
+    color: var(--dark)
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .presentation {
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1248px) {}

@@ -1,0 +1,101 @@
+:root {
+    --dark: #3C3C3C;
+    --light: #CACACA;
+    --color1: #EC905D;
+    --color2: #F8F3A1;
+    --color3: #B5D5B0;
+    --color4: #9BB4CA;
+    --color5: #55AE9A;
+
+}
+
+section#skills {
+    width: 100%;
+}
+
+section article.skills {
+    margin: auto;
+    width: 60%;
+    height: auto;
+}
+
+section article.skills p {
+    z-index: 2;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+section article.skills div span:nth-child(1) {
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+
+}
+
+section article.skills div span:nth-child(2) {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--color5);
+    width: 0%;
+}
+
+section article.skills div:nth-child(1) span:nth-child(2).animate {
+    width: 70%;
+}
+
+section article.skills div:nth-child(2) span:nth-child(2).animate {
+    width: 50%;
+}
+
+section article.skills div:nth-child(3) span:nth-child(2).animate {
+    width: 80%;
+}
+
+section article.skills div:nth-child(4) span:nth-child(2).animate {
+    width: 70%;
+}
+
+section article.skills div:nth-child(5) span:nth-child(2).animate {
+    width: 50%;
+}
+
+section article.skills div:nth-child(6) span:nth-child(2).animate {
+    width: 60%;
+}
+
+.skills {
+    transition: width 1.25s cubic-bezier(0.17, 0.67, 0, 1);
+}
+
+@keyframes skills {
+    0% {
+        left: -500px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    section article.skills {
+        margin: auto;
+        width: 50%;
+        height: auto;
+    }
+}

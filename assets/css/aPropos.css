@@ -1,0 +1,153 @@
+/*infos text*/
+.competences {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 3rem;
+}
+
+.competences div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.competences p {
+    line-height: 1.3rem;
+    padding-top: 1rem;
+}
+
+.competences span {
+    font-weight: 600;
+    color: var(--color1);
+}
+
+.big {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    color: var(--color5);
+
+}
+
+button {
+    margin-top: 2rem;
+}
+
+/*compétences*/
+.blue-backround {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.title {
+    margin-bottom: 2rem;
+}
+
+/*expériences*/
+
+.experiences {
+    padding: 2rem 3rem;
+    background-image: url(/assets/img/jan-huber-AF6N3WRsyk4-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.job {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#job {
+    background-color: rgba(255, 255, 255, 0.942);
+    padding: 2rem;
+}
+
+.post {
+    width: 100%;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.postBig {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color4);
+}
+
+.compagny {
+    padding-top: 0.5rem;
+    color: var(--color5);
+    font-weight: 500;
+}
+
+.missions {
+    text-align: left;
+    line-height: 1.2rem;
+    margin-top: 1rem;
+    display: none;
+}
+
+
+
+
+@media (min-width: 768px) {
+
+
+    .competences {
+        margin: auto;
+        max-width: 1050px;
+        flex-direction: row;
+        gap: 2rem;
+
+    }
+
+    .competences div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .big {
+        text-align: left;
+    }
+
+    .competences img {
+        max-width: 300px;
+    }
+
+    .missions {
+        display: inherit;
+    }
+
+    #job {
+        align-items: flex-start;
+        background-color: rgba(255, 255, 255, 0.942);
+        padding: 2rem;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .post {
+        text-align: left;
+    }
+
+
+}
+
+
+
+
+
+
+@media (min-width: 1248px) {}

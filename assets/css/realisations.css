@@ -1,0 +1,68 @@
+/*real*/
+.realisations {
+    display: grid;
+    gap: 2rem;
+    padding: 3rem;
+}
+
+#case {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+
+
+
+#case div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark);
+    opacity: 0;
+    transition: .5s ease;
+
+}
+
+#case div p {
+    text-align: center;
+    color: #fff;
+}
+
+#case :hover {
+    opacity: 0.8;
+
+
+}
+
+
+@media (min-width: 768px) {
+
+
+    .realisations {
+
+        grid-template-columns: auto auto;
+        align-items: baseline;
+        justify-content: center;
+        padding: 3rem 3.5rem;
+        column-gap: 2rem;
+
+    }
+}
+
+@media (min-width: 1248px) {
+    .realisations {
+
+        grid-template-columns: auto auto auto;
+        align-items: baseline;
+        justify-content: center;
+        padding: 3rem 3.5rem;
+        column-gap: 2rem;
+
+    }
+}

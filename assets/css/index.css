@@ -1,0 +1,165 @@
+/* Réalisations */
+
+#main-Real {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+}
+
+#case {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+
+
+
+#case div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark);
+    opacity: 0;
+    transition: .5s ease;
+
+}
+
+#case div p {
+    text-align: center;
+    color: #fff;
+}
+
+#case :hover {
+    opacity: 0.8;
+
+
+}
+
+
+.title h1 {
+    text-transform: uppercase;
+    color: #3C3C3C;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+
+}
+
+.title img {
+    width: 100px;
+    margin: auto;
+}
+
+
+
+
+/* Présentation */
+.presentation img {
+    max-width: 300px;
+}
+
+.presentation {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    line-height: 150%;
+
+}
+
+.presentation h1 {
+    color: var(--color3);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.presentation p {
+    margin: 1rem;
+}
+
+.bloc-pres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+
+
+
+    #main-Real {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+
+
+
+}
+
+@media (min-width: 992px) {
+
+
+
+    .presentation {
+        max-width: 1000px;
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        line-height: 150%;
+
+    }
+
+    .presentation h1 {
+        color: var(--color3);
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .presentation p {
+        margin: 1rem 0;
+    }
+
+    .bloc-pres {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bloc-pres button {
+        margin-top: 1rem;
+        margin-left: -15px;
+    }
+
+
+
+}

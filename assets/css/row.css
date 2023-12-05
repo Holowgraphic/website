@@ -1,0 +1,15 @@
+.row {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    gap: 3rem;
+}
+
+.col-4 {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.col-4 a {
+    color: #3C3C3C;
+}

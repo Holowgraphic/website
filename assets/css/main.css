@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: #3C3C3C;
+    --light: #CACACA;
+    --color1: #EC905D;
+    --color2: #F8F3A1;
+    --color3: #B5D5B0;
+    --color4: #9BB4CA;
+    --color5: #55AE9A;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark);
+    line-height: 1;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+    color: #3C3C3C;
+    font-family: montserrat, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    border-width: 0.5rem;
+    background-color: transparent;
+    border-style: solid;
+    border-color: var(--dark);
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    max-width: fit-content;
+}
+
+button a {
+    color: #3C3C3C;
+}
+
+button:hover {
+    border-color: var(--color2);
+}
+
+.blue-backround {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color4);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.title h1 {
+    text-transform: uppercase;
+    color: #3C3C3C;
+    margin: auto;
+
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+
+}
+
+.title img {
+    width: 100px;
+    margin: auto;
+}
+
+/*header*/
+header {
+    background-image: url("/assets/img/fond.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+header img {
+    margin: auto;
+    max-width: 50%;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+
+/*nav*/
+
+#nav {
+    display: none;
+}
+
+#nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 600px;
+    list-style: none;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+
+}
+
+#nav a {
+    text-transform: capitalize;
+    color: var(--dark);
+    border-radius: 16px;
+    padding: 0.4rem 0.8rem;
+    transition: background-color .5s ease;
+}
+
+
+#nav a:hover,
+#nav a.active {
+    background-color: var(--color1);
+}
+
+
+/*backdrop*/
+#backdrop {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+#backdrop.menu-open {
+    z-index: 1;
+}
+
+/* sideNav */
+
+.sidenav {
+    background-color: #F8F3A1;
+    border-radius: 0px 0px 250px 250px;
+    height: 60%;
+    width: 100%;
+    position: fixed;
+    right: 0px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity .3s ease-in;
+    visibility: hidden;
+}
+
+.sidenav.opened {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidenav ul {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 600px;
+    list-style: none;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+
+}
+
+.sidenav a {
+    cursor: pointer;
+    text-transform: capitalize;
+    color: var(--dark);
+    border-radius: 16px;
+    padding: 0.4rem 0.8rem;
+    transition: background-color .5s ease;
+}
+
+.sidenav a:hover,
+.sidenav a.active {
+    background-color: var(--color1);
+}
+
+/* Close btn */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+/* Icône burger */
+.burger-icon {
+    position: relative;
+    float: right;
+    margin-top: 1rem;
+    margin-right: 3rem;
+    cursor: pointer;
+}
+
+.burger-icon span {
+
+    display: block;
+    width: 35px;
+    height: 5px;
+    border-radius: 100px;
+    background-color: var(--dark);
+    margin: 6px 0;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #F8F3A1;
+    padding: 3rem;
+
+}
+
+.linkedin {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: #F8F3A1;
+    padding: 3rem;
+
+}
+
+footer img {
+    height: 30px;
+    margin-bottom: 0.5rem;
+}
+
+
+footer div {
+    margin-bottom: 2rem;
+}
+
+footer a {
+    color: #3C3C3C;
+}
+
+.small {
+    font-size: 0.8rem;
+}
+
+.linkedin span {
+    display: flex;
+    gap: 1rem;
+}
+
+
+@media (min-width: 768px) {
+
+    header {
+        align-items: center;
+
+    }
+
+    header img {
+        margin: auto;
+        padding: 3rem;
+        max-width: 400px;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        align-items: center;
+    }
+
+    #nav {
+        display: inherit;
+    }
+
+    .sidenav {
+        display: none;
+    }
+
+    .burger-icon {
+        display: none;
+    }
+
+
+}
